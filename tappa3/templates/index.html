@@ -1,24 +1,8 @@
-<!DOCTYPE html>
-<html lang="it">
+{% extends "base.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorial Flask</title>
-
-</head>
-
-<body>
-    <h1>Benvenuti alla Tappa 3</h1>
-    <p>Messaggio dal Server</p>
-    <p>{{ messaggio }}</p>
-
-    <p>{{studenti}}</p>
-    <ul>
-    {% for studente in studenti %}
-</li>{{ studente }}</li>
-    {% endfor %}
-    </ul>
-</body>
-
-</html>
+{% block title %}
+Pagina studenti
+{% endblock %}
+{% block content %}
+    <h1>Benvenuto!</h1>
+{% endblock %}
