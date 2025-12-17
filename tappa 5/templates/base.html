@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
     <title> {% block title %} Titolo Base {% endblock %}</title>
-</head>
+    <script src="{{ url_for('static', filename='js/api.js') }}" defer></script>
+    </head>
 <body>
 
     <nav>
         <a href="/">Home</a>
         <a href="/about">About</a>
         <a href="/studenti">Pagina studenti</a>
+        <a href="/jsdemo">Pagina test JS</a>
     </nav>
     
     {% block content %}
